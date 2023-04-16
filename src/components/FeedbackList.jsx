@@ -1,7 +1,6 @@
 import FeedbackItem from "./FeedbackItem";
 
 function FeedbackList({ feedback }) {
-  console.log(feedback.map((item) => item.id + item));
   if (!feedback || feedback.length === 0) {
     return <p>No feedback yet</p>;
   }

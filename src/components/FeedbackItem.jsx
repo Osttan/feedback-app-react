@@ -7,11 +7,12 @@ function FeedbackItem(item) {
   //       return prev + 1;
   //     });
   //   };
+  // console.log("é esse" + item.rating);
 
   return (
     <div className="card">
-      <div className="num-display">{item.rating}</div>
-      <div className="text-display">{item.text}</div>
+      <div className="num-display">{item.item.rating}</div>
+      <div className="text-display">{item.item.text}</div>
       {/* <button onClick={handleClick}>Click</button> */}
     </div>
   );
